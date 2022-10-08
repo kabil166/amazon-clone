@@ -13,8 +13,8 @@
 }
 
 .product > img{
-    max-height: 200px;
-    width: 100px;
+    max-height: 300px;
+    width: 150px;
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -22,7 +22,9 @@
 .product > button{
     background-color: #f0c14b;
     border: 1px solid;
+    border-radius: 2px;
     margin-top: 10px;
+    padding: 5px;
     background-color: #a88734 #9c7e31 #846a29;
     color: #111;
     cursor: pointer;
@@ -30,6 +32,7 @@
 .product__info{
     height: 100px;
     margin-bottom: 15px;
+    margin-left: -50%;
 }
 
 .product__price{

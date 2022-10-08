@@ -2,11 +2,14 @@ import React from 'react'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className='header'>
+        <Link to='/'>
         <img className="header__logo" src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" alt=''/>
+        </Link>
         <div className="header__search">
             <input className='header__searchInput' type="text"/>
             <SearchIcon className='header__searchIcon'/>
@@ -36,14 +39,14 @@ function Header() {
                     Prime
                 </span>
             </div>
-
+            <Link to="/checkout">
             <div className='header__optionbasket'>
-                <ShoppingBasketIcon/>
-                <span className='header__optionLineTwo header__basketCount'>
-                    0
-                </span>
+                    <ShoppingBasketIcon/>
+                    <span className='header__optionLineTwo header__basketCount'>
+                        0
+                    </span>
             </div>
-
+            </Link>
         </div>
     </div>
   )
